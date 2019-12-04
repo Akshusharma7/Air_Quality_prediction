@@ -26,7 +26,7 @@ def avg_data_2013():
     return average
 
 data1 = avg_data_2013()
-print(len(data1))
+#print(len(data1))
 
 
 def avg_data_2014():
@@ -53,7 +53,7 @@ def avg_data_2014():
     return average
 
 data1 = avg_data_2014()
-print(len(data1))
+#print(len(data1))
 
 
 
@@ -81,7 +81,7 @@ def avg_data_2015():
     return average
 
 data1 = avg_data_2015()
-print(len(data1))
+#print(len(data1))
 
 
 if __name__ == '__main__':
