@@ -83,3 +83,17 @@ def avg_data_2015():
 data1 = avg_data_2015()
 print(len(data1))
 
+
+if __name__ == '__main__':
+    lst2013=avg_data_2013()
+    lst2014=avg_data_2014()
+    lst2015=avg_data_2015()
+    
+    plt.plot(range(0,364),lst2013,label="2013 data")
+    plt.plot(range(0,364),lst2014,label="2014 data")
+    plt.plot(range(0,365),lst2015,label="2015 data")
+    plt.xlabel('Day')
+    plt.ylabel('PM 2.5')
+    plt.legend(loc='upper right')
+    plt.show()
+    
