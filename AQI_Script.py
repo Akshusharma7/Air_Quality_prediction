@@ -83,7 +83,6 @@ def avg_data_2015():
 data1 = avg_data_2015()
 #print(len(data1))
 
-
 #----Main function ---- 
 if __name__ == '__main__':
     lst2013=avg_data_2013()
