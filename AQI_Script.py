@@ -54,6 +54,7 @@ def avg_data_2014():
         average.append(avg)
     return average
 
+
 data1 = avg_data_2014()
 #print(len(data1))
 
