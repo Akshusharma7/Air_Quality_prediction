@@ -55,6 +55,8 @@ def data_combine(year, cs):
         mylist = df.values.tolist()
     return mylist
 
+
+
 if __name__ == "__main__":
     if not os.path.exists("Data/Real-Data"):
         os.makedirs("Data/Real-Data")
@@ -92,4 +94,13 @@ if __name__ == "__main__":
     data_2015 = data_combine(2015, 600)
   
     
+    total=data_2013+data_2014+data_2015
     
+    with open('Data/Real-Data/Real_Combine.csv', 'w') as csvfile:
+        wr = csv.writer(csvfile, dialect='excel')
+        wr.writerow(
+            ['T', 'TM', 'Tm', 'SLP', 'H', 'VV', 'V', 'VM', 'PM 2.5'])
+        wr.writerows(total)
+        
+        
+df=pd.read_csv('Data/Real-Data/Real_Combine.csv')
