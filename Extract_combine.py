@@ -54,3 +54,42 @@ def data_combine(year, cs):
         df = pd.DataFrame(data=a)
         mylist = df.values.tolist()
     return mylist
+
+if __name__ == "__main__":
+    if not os.path.exists("Data/Real-Data"):
+        os.makedirs("Data/Real-Data")
+    for year in range(2013, 2017):
+        final_data = []
+        with open('Data/Real-Data/real_' + str(year) + '.csv', 'w') as csvfile:
+            wr = csv.writer(csvfile, dialect='excel')
+            wr.writerow(
+                ['T', 'TM', 'Tm', 'SLP', 'H', 'VV', 'V', 'VM', 'PM 2.5'])
+        for month in range(1, 13):
+            temp = met_data(month, year)
+            final_data = final_data + temp
+            
+        pm = getattr(sys.modules[__name__], 'avg_data_{}'.format(year))()
+
+        if len(pm) == 364:
+            pm.insert(364, '-')
+
+        for i in range(len(final_data)-1):
+            # final[i].insert(0, i + 1)
+            final_data[i].insert(8, pm[i])
+
+        with open('Data/Real-Data/real_' + str(year) + '.csv', 'a') as csvfile:
+            wr = csv.writer(csvfile, dialect='excel')
+            for row in final_data:
+                flag = 0
+                for elem in row:
+                    if elem == "" or elem == "-":
+                        flag = 1
+                if flag != 1:
+                    wr.writerow(row)
+                    
+    data_2013 = data_combine(2013, 600)
+    data_2014 = data_combine(2014, 600)
+    data_2015 = data_combine(2015, 600)
+  
+    
+    
