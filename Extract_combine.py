@@ -92,7 +92,7 @@ if __name__ == "__main__":
     data_2014 = data_combine(2014, 600)
     data_2015 = data_combine(2015, 600)
   
-    
+   
     total=data_2013+data_2014+data_2015
     
     with open('Data/Real-Data/Real_Combine.csv', 'w') as csvfile:
@@ -100,6 +100,5 @@ if __name__ == "__main__":
         wr.writerow(
             ['T', 'TM', 'Tm', 'SLP', 'H', 'VV', 'V', 'VM', 'PM 2.5'])
         wr.writerows(total)
-        
-        
+             
 df=pd.read_csv('Data/Real-Data/Real_Combine.csv')
