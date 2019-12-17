@@ -25,11 +25,11 @@ def retrieve_html():
             
         sys.stdout.flush()
         
+        
 if __name__=="__main__":
     start_time=time.time()
     retrieve_html()
     stop_time=time.time()
-    print("Time taken {}".format(stop_time-start_time))
-    
+    print("Time taken {}".format(stop_time-start_time)) 
     
 
