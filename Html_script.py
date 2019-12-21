@@ -23,7 +23,8 @@ def retrieve_html():
                 output.write(text_utf)
             
         sys.stdout.flush()
-        
+ 
+
 if __name__=="__main__":
     start_time=time.time()
     retrieve_html()
