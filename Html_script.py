@@ -1,9 +1,8 @@
-#IMPORET
+#IMPORT Libraries
 import os
 import time
 import requests
 import sys
-
 
 
 #Define a function to pull and store html file in local system
