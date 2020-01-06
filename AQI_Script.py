@@ -21,6 +21,7 @@ def avg_data_2013():
                 if i != 'NoData' and i != 'PwrFail' and i != '---' and i!= 'Invld':
                     temp = float(i)
                     add_var = add_var + temp
+                    
         avg = add_var/24
         temp_i = temp_i+1
         
