@@ -27,7 +27,6 @@ def retrieve_html():
         sys.stdout.flush()
  
 
-
 if __name__=="__main__":
     start_time=time.time()
     retrieve_html()
