@@ -5,7 +5,6 @@ from keras.layers import Dense
 from keras.layers import LeakyReLU,PReLU,ELU
 from keras.layers import Dropout
 
-
 NN_model = Sequential()
 
 #The Input Layer:
