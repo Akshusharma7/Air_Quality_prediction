@@ -30,7 +30,7 @@ model_history = NN_model.fit(X_train, y_train, validation_split=0.33, batch_size
 prediction = NN_predict(X_test)
 print(y_test)
 
-
+#Shape of model evaluation
 sns.distplot(y_test.values.reshape(-1,1)-prediction)
 
 
