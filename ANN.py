@@ -29,12 +29,14 @@ model_history = NN_model.fit(X_train, y_train, validation_split=0.33, batch_size
 
 #Model Evaluation
 prediction = NN_predict(X_test)
-y_test
+print(y_test)
+
 
 sns.distplot(y_test.values.reshape(-1,1)-prediction)
 
-from sklearn import metrics
 
+
+from sklearn import metrics
 print("MAE: ",metrics.mean_absolute_error(y_test, predictions))
 print("MSE: ",metrics.mean_squared_error(y_test, predictions))
 print("RMSE: ", np.sqrt(metrcs.mean_square_error(y_test, predictions)))
