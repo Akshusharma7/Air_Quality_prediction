@@ -38,6 +38,7 @@ def met_data(month, year):
     finalD.pop(0)
 
     
+    
     for a in range(len(finalD)):
         finalD[a].pop(6)
         finalD[a].pop(13)
