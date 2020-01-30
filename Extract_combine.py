@@ -23,6 +23,7 @@ def met_data(month, year):
                 tempD.append(a)
 
     rows = len(tempD) / 15
+
     
     
     for times in range(round(rows)):
