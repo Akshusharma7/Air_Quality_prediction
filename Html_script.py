@@ -4,8 +4,6 @@ import time
 import requests
 import sys
 
-
-
 #Define a function to pull and store html file in local system
 def retrieve_html():
     
