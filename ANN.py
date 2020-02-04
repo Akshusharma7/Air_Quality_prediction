@@ -27,6 +27,7 @@ NN_model.summary()
 model_history = NN_model.fit(X_train, y_train, validation_split=0.33, batch_size = 10, nb_epoch= 100)
 
 
+
 #Model Evaluation
 prediction = NN_predict(X_test)
 print(y_test)
