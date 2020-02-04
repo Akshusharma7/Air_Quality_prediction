@@ -35,7 +35,6 @@ print(y_test)
 sns.distplot(y_test.values.reshape(-1,1)-prediction)
 
 
-
 from sklearn import metrics
 print("MAE: ",metrics.mean_absolute_error(y_test, predictions))
 print("MSE: ",metrics.mean_squared_error(y_test, predictions))
