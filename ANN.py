@@ -8,6 +8,7 @@ from keras.layers import Dropout
 
 NN_model = Sequential()
 
+
 #The Input Layer:
 NN_model.add(Dense(128,kernal_initializer='normal',input_dim= X_shape[1]))
 
