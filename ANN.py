@@ -11,7 +11,6 @@ NN_model = Sequential()
 #The Input Layer:
 NN_model.add(Dense(128,kernal_initializer='normal',input_dim= X_shape[1]))
 
-
 #The Hidden Layers:
 NN_model.add(Dense(256, Kernal_initializer='normal', activation='relu'))
 NN_model.add(Dense(256, Kernal_initializer='normal', activation='relu'))
