@@ -33,7 +33,6 @@ data1 = avg_data_2013()
 #print(len(data1))
 
 
-
 def avg_data_2014():
     temp_i = 0
     average = []
