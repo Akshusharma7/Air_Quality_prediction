@@ -14,7 +14,6 @@ def met_data(month, year):
 
     tempD = []
     finalD = []
-
     
     soup = BeautifulSoup(plain_text, "lxml")
     for table in soup.findAll('table', {'class': 'medias mensuales numspan'}):
